@@ -1,27 +1,78 @@
 <!DOCTYPE html>
 <html>
+<!-- <script>
+	function myFunction() {
+	    var x = document.getElementById("myTopnav");
+	    if (x.className.indexOf(" responsive") !== -1) {
+	    	x.className = "";
+	    } else {
+	    	x.className += " responsive";
+	    }  
+}
+</script> -->
 <head>
-	<link rel="stylesheet" type="text/css" href="style.css" />
-	<title>Sheila Truong | Software Engineer</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	 <script type="text/javascript" src="js/index.js"></script>
   	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  	<meta name="author" content="Sheila Truong">
+  	<title>Sheila Truong | Software Engineer</title>
 </head>
 
 <body>
+	<!-- navigation bar -->
 	<nav>
-		<ul>
-			<li><a href="#home">Home</a></li>
-			<li><a href="#news">News</a></li>
-			<li><a href="#contact">Contact</a></li>
+		<ul id="myTopnav">
 			<li><a href="#about">About</a></li>
+			<li><a href="#interests">Interests</a></li>
+			<li><a href="#skills">Skills</a></li>
+			<li><a href="#resume">Resume</a></li>
+			<li><a href="#experience">Experience</a></li>
+			<li><a href="#projects">Projects</a></li>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 		</ul>
 	</nav>
-	<center>
-		<div>
+
+	<!-- picture, name, title -->
+	<div class="headingDetails">
+		<center>
 			<img src="sheila.jpeg" alt="Portfolio Picture">
 			<h2>Sheila Truong</h2>
-		</div>
-	</center>
+			<p> Software Developer </p>
+		</center>
+	</div>
+
+	<!-- About Me  -->
+	<div>
+	<h2 class=sectionTitle> About Me </h2>
+	</div>
+
+	<!-- Interests  -->
+	<div>
+	<h2 class=sectionTitle> Interests </h2>
+	</div>
+
+	<!-- Skills  -->
+	<div>
+	<h2 class=sectionTitle> Skills </h2>
+	</div>
+
+	<!-- Experience  -->
+	<div>
+	<h2 class=sectionTitle> Experience </h2>
+	</div>
+
+	<!-- Projects  -->
+	<div>
+	<h2 class=sectionTitle> Projects </h2>
+	</div>
+
+
+
+
 </body>
 </html>
+
+
+
