@@ -1,25 +1,24 @@
-
-/*makes nav bar fill the entire space*/
-body {
-	margin:0;
+/*Navigation bar */
+body { /*makes nav bar fill the entire space*/
+  margin:0;
 }
 
 
-ul {
+#myTopnav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-	text-align: center;
+    text-align: center;
 
 }
 
-li {
-	display: inline-block;
+#myTopnav li {
+  display: inline-block;
 }
 
-ul a {
-	float: left;  /**/
+#myTopnav a {
+    float: left;
     display: block;
     color: #dab3ff;
     text-align: center;
@@ -27,7 +26,7 @@ ul a {
     text-decoration: none;
 }
 
-ul .icon {
+#myTopnav .icon {
   display: none;
 }
 
@@ -38,51 +37,95 @@ li a:hover:not(.active) {
 }
 
 
+/*Profile Picture*/
 img {
     border-radius: 50%;
     width: 15%;
     height: 15%;
     padding-top: 2%;
-	padding-bottom: 2%;
+  padding-bottom: 2%;
 }
 
-.headingDetails {
-	margin-top: 0%;
-	margin-bottom: 0%;
-	letter-spacing: 0.0625em;
+/*Name and Postition title*/
+.headingDetails, h2, p{
+  letter-spacing: 0.0625em;
+  margin-top: 0%;
 }
 
+.headingDetails, h2{
+  margin-bottom: 0%;
+}
 
+/*Each content section*/
+.sectionTitle h3 {
+  color: #dab3ff;
+}
+
+/*About Me*/
 .sectionTitle {
-	color: #dab3ff;
+  padding: 5%;
+}
 
+.sectionTitle p {
+  margin-left: 8%;
+}
+
+/*skills*/
+.skillCol {
+  margin-left: 6%;
+}
+.languages, .os, .tools{
+  width: 200px;
+  float:left;
+}
+
+
+.languages ul, .os ul, .tools ul{
+  list-style-type: none;
+  font-size: 1em;
+  padding: 0;
+  margin-left: 7%;
+}
+
+br {
+  clear: left;
+}
+
+
+
+/*450*/
+
+
+
+footer {
+  padding: 10%;
 }
 
 /*responsive design to nav bar*/
 @media screen and (max-width: 600px) {
-  ul a {
-  	display: none;
+  #myTopnav a {
+    display: none;
   }
-  ul .icon {
+  #myTopnav .icon {
     float: left;
     display: block;
   }
 }
 
 @media screen and (max-width: 600px) {
-  ul.responsive {
-  	position: relative;
+  #myTopnav.responsive {
+    position: relative;
   }
-  ul.responsive .icon {
+  #myTopnav.responsive .icon {
     position: absolute;
     top: 0;
   }
-  ul.responsive a {
+  #myTopnav.responsive a {
     float: none;
     display: block;
   }
-  ul.responsive li{
-  	display:block;
+  #myTopnav.responsive li{
+    display:block;
   }
 }
 
