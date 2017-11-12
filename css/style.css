@@ -31,17 +31,17 @@ body { /*makes nav bar fill the entire space*/
 }
 
 /*makes the hover colored darker purple (#6900cc)*/
-li a:hover:not(.active) {
+#myTopnav li a:hover:not(.active) {
     font-style: italic;
     color: #6900cc;
 }
 
 
 /*Profile Picture*/
-img {
+.profileImage {
     border-radius: 50%;
-    width: 15%;
-    height: 15%;
+    width: 20%;
+    height: 20%;
     padding-top: 2%;
   padding-bottom: 2%;
 }
@@ -61,48 +61,165 @@ img {
   color: #dab3ff;
 }
 
-/*About Me*/
 .sectionTitle {
-  padding: 5%;
+  padding: 10%;
 }
 
+/*About Me*/
+#AboutMe {
+  padding-top: 2em;
+}
 .sectionTitle p {
   margin-left: 8%;
 }
 
 /*skills*/
-.skillCol {
-  margin-left: 6%;
+#Skills {
+  padding-top:2em;
 }
-.languages, .os, .tools{
-  width: 200px;
-  float:left;
-}
-
-
-.languages ul, .os ul, .tools ul{
-  list-style-type: none;
-  font-size: 1em;
-  padding: 0;
-  margin-left: 7%;
+.sectionSkills {
+  background-color: #F0F0F0;
+  padding: 10%;
 }
 
-br {
-  clear: left;
+.sectionSkills h3 {
+    color: #dab3ff;
 }
 
+.sectionSkills p {
+  margin-left: 8%;
+}
+.col-sm-4 ul li {
+    list-style-type: none;
+}
 
+.col-sm-4 .eachSkill {
+  font-weight: bold;
+  font-size: 1.2em;
+}
 
 /*450*/
 
 
 
-footer {
-  padding: 10%;
+/*Experience*/
+#Experience {
+  padding-top:2em;
 }
 
+.workImage {
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+    margin-left: 15%;
+/*  float:center;
+*/}
+
+.workTimePlace {
+  float: right;
+}
+
+/*.col-sm-3 img {
+  float:center;
+}*/
+.workNamePos {
+  float: left;
+  padding: 0%;
+  font-weight: bold;
+
+}
+.col-sm-9 ul {
+  padding-left: 2%;
+}
+
+
+/*Resume*/
+.resumeSection {
+  padding-top: 3%;
+  background-color: #e6e6ff;
+  padding-bottom:3%;
+  /*height: 12em;*/
+}
+
+.resumeSection p {
+  color:#ffffff;
+  margin: 0%;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+.resumeSection img {
+  width: 5%;
+  height: 5%;
+}
+
+/*Projects*/
+
+#Projects {
+  padding-top:2em;
+  padding-bottom: 2em;
+}
+
+.projectName {
+  margin-left: 5%;
+  font-weight: bold;
+  /*text-align: center;*/
+}
+
+.projectRow {
+  margin-left:8%;
+}
+
+#languages {
+  margin-left: 1%;
+}
+#languages li {
+    list-style-type: none;
+    display: inline-block;
+    border-radius: 10em;
+    border: .1em solid #000000;
+    padding: 1.5%; 
+}
+
+/*contact me*/
+.sectionContact {
+  background-color: #F0F0F0;
+  height:20em;
+  padding: 5%;
+}
+.sendEmailIcon {
+  width: 5%;
+  height: 5%;
+}
+
+.roundBorder {
+    border-radius: 25em;
+    border: .1em solid #000000;
+    padding: 1%; 
+
+}
+
+
+/*social media*/
+
+.socialMedia img {
+  width: 5%;
+  height: 5%;
+  float: center;
+  padding-top: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding-bottom: 1%;
+}
+
+footer {
+  padding-top: 2%;
+}
+
+
 /*responsive design to nav bar*/
-@media screen and (max-width: 600px) {
+
+/*going mobile shows the nav icon*/
+@media screen and (max-width: 690px) {
   #myTopnav a {
     display: none;
   }
@@ -110,10 +227,7 @@ footer {
     float: left;
     display: block;
   }
-}
-
-@media screen and (max-width: 600px) {
-  #myTopnav.responsive {
+    #myTopnav.responsive {
     position: relative;
   }
   #myTopnav.responsive .icon {
@@ -126,6 +240,138 @@ footer {
   }
   #myTopnav.responsive li{
     display:block;
+  }
+  .profileImage {
+    border-radius: 50%;
+    width: 30%;
+    height: 30%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  .headingDetails h2 {
+    margin-top: 0%;
+    font-size: 1.4em;
+  }
+
+  .headingDetails p {
+    margin-top: 0%;
+    font-size: .8em;
+  }
+
+  .workImage {
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+    margin-left: 15%;
+    text-align:center;
+  }
+
+  #row {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  #sendGridImage {
+    margin-left: 25%;
+  }
+
+  #sendGridImage img {
+    width: 30%;
+  }
+
+  #schoolrImage {
+    margin-left: 30%;
+  }
+
+  #schoolrImage img {
+    width: 20%;
+  }
+
+  #girlsIncImage {
+    width: 25%;
+    margin-left: 37%;
+  }
+
+  #Resume p {
+    font-size: 1.3em;
+  }
+
+  #Resume img {
+    width: 10%;
+    height: 10%;
+  }
+
+.workTimePlace {
+  float: left;
+}
+
+.projectName {
+  margin:0%;
+}
+
+}
+
+
+/*tablet*/
+@media screen and (max-width: 768px) {
+
+  #skillLanguages, #skillOS {
+    width: 40%;
+    float: left;
+    font-size: .7em;
+    padding: 0%;
+  }
+
+  #skillTools {
+    width: 20%;
+    float: right;
+    font-size:.7em;
+    padding:0%;
+  }
+
+  .workTimePlace {
+    float: left;
+  }
+
+  #timePlace {
+    float:right;
+  }
+
+  .projectName {
+    margin:0%;
+  }
+
+  #sendGridImage {
+    margin-left: 25%;
+  }
+
+  #sendGridImage img {
+    width: 30%;
+  }
+
+  #schoolrImage {
+    margin-left: 30%;
+  }
+
+  #schoolrImage img {
+    width: 20%;
+  }
+
+  #girlsIncImage {
+    width: 25%;
+    margin-left: 37%;
+  }
+}
+
+
+/*desktop view*/
+@media screen and (min-width: 768px) {
+  .workTimePlace {
+    float:right;
+  }
+  .projectName {
+    margin-left: 25%;
   }
 }
 

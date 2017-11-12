@@ -1,19 +1,11 @@
 <!DOCTYPE html>
 <html>
-<!-- <script>
-	function myFunction() {
-	    var x = document.getElementById("myTopnav");
-	    if (x.className.indexOf(" responsive") !== -1) {
-	    	x.className = "";
-	    } else {
-	    	x.className += " responsive";
-	    }  
-}
-</script> -->
+
 <head>
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	 <script type="text/javascript" src="js/index.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	<script type="text/javascript" src="js/index.js"></script>
   	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   	<meta name="author" content="Sheila Truong">
@@ -23,12 +15,13 @@
 <body>
 	<!-- navigation bar -->
 	<nav>
-		<ul id="myTopnav">
-			<li><a href="#about">About</a></li>
-			<li><a href="#skills">Skills</a></li>
-			<li><a href="#experience">Experience</a></li>
-			<li><a href="#resume">Resume</a></li>
-			<li><a href="#projects">Projects</a></li>
+		<ul class=test id="myTopnav">
+			<li><a href="#AboutMe">About</a></li>
+			<li><a href="#Skills">Skills</a></li>
+			<li><a href="#Experience">Experience</a></li>
+			<li><a href="#Resume">Resume</a></li>
+			<li><a href="#Projects">Projects</a></li>
+			<li><a href="#Contact">Contact</a></li>
 			<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 		</ul>
 	</nav>
@@ -36,89 +29,262 @@
 	<!-- picture, name, title -->
 	<div class=headingDetails>
 		<center>
-			<img src="sheila.jpeg" alt="Portfolio Picture">
+			<img class="profileImage" src="img/sheila.jpeg" alt="Portfolio Picture">
 			<h2>Sheila Truong</h2>
 			<p> Software Developer </p>
 		</center>
 	</div>
 
 	<!-- About Me  -->
-	<div class=sectionTitle>
+	<div class=sectionTitle id=AboutMe>
 		<h3> About Me </h3>
 		<p> 
-			Hello! My name is Sheila Truong. I'm a 4th year Computer Science major at University of California, Irvine. I am interested in Software Development because I want to create new technologies that can help and change the way we see technlogies today. 
+			Hello! My name is Sheila Truong. I'm a 4th year Computer Science major at University of California, Irvine expecting to graudate in June 2018. Currently, I am involved in UCI's Capstone Experience program working for SendGrid to help optimize their email services. In between school and SendGrid, I am interning as a Front End Developer at a startup company called Schoolr, designed to modernize tutoring.
+		</p>
+		<p> 
+			I am interested in Software Development because I want to create new technologies that can impact and improve people's day-to-day lives. I want to work for a company that always have the public's thoughts in their mind, and to build and change their products based on their customer's needs.
+		</p>
+
+		<p>
+			When I'm not coding, I'm probably laying in bed binge watching TV shows on Netflix or driving around my city looking for the newest and hottest boba shops!
 		</p>
 	</div>
 
-	<!-- Skills  -->
-	<div class=sectionTitle>
+	<!-- Skills -->
+	<div class=sectionSkills id=Skills> 
 		<h3> Skills </h3>
-
-		<div class=skillCol>
-			<div class=languages>
-				<b><p> Languages </p></b>
-				<ul>
-				  <li>Python</li>
+		<div class="container-fluid">
+		  <div class="row">
+		    <div class="col-sm-4" id="skillLanguages">
+		    	<ul class=eachSkill>
+		    		<li> Languages </li>
+		    	</ul>
+		    	<ul>
+		    	  <li>Python</li>
 				  <li>Java</li>
 				  <li>C++</li>
 				  <li>C</li>
 				  <li>HTML</li>
 				  <li>MySQL</li>
 				  <li>CSS</li>
-				</ul> 			
-			</div>
-
-			<div class=os>
-				<b><p> OS </p></b>
+		    	</ul>
+		    </div>
+		    <div class="col-sm-4" id="skillOS">
+		    	<ul class=eachSkill>
+		    		<li> Operating Systems </li>
+		    	</ul>
 				<ul>
-				  <li>Windows</li>
 				  <li>OS X</li>
+				  <li>Windows</li>
 				  <li>Linux</li>
-
-				</ul> 
-			</div>
-
-			<div class=tools>
-				<b><p> Tools </p></b>
+				</ul>
+		    </div>
+		    <div class="col-sm-4" id="skillTools">
+		    	<ul class=eachSkill>
+		    		<li> Tools </li>
+		    	</ul>
 				<ul>
 				  <li>Eclipse</li>
 				  <li>xCode</li>
 				  <li>Git + Github</li>
 				  <li>Command Line</li>
 				</ul> 
-			</div>
+		    </div>
+		  </div>
+		</div>
+	</div>
 
-			 <br/>
+
+	<div class=sectionTitle id=Experience>
+		<h3> Experience </h3>
+		<div class="container-fluid">
+			<div class="row">
+			    <div class="col-sm-3" id="sendGridImage">
+			    	<img class=workImage src="img/SendGrid-logo.jpg" alt="SendGrid">
+			    </div>
+			    <div class="col-sm-9">
+				    	<div class=workNamePos>
+					    	SendGrid
+					    </div>
+						<span class=workTimePlace id="timePlace">
+							<i> October 2017 - Present </i>
+						</span>
+						<br>
+				    	<div class=workNamePos>
+					    	Intern
+					    </div>
+						<span class=workTimePlace id="timePlace">
+							<i>Irvine, CA</i>
+						</span>
+						<br>
+						<br>
+						<ul>
+						  <li>Participating in UCI's Capstone Experience Program to work with SendGrid to optimize their services.</li>
+						  <li> In the process of creating a system that uses a pre-existing bloom lter implementation to reduce the average latency for mail processing.</li>
+						  <li>Attend in biweekly Google Hangouts and on-site meetings with the project manager and engineers.</li>
+						</ul> 
+						<br>
+			    </div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+			    <div class="col-sm-3" id="schoolrImage">
+			    	<img class=workImage src="img/schoolr.png" alt="Schoolr">
+			    </div>
+			    <div class="col-sm-9">
+				    	<div class=workNamePos>
+					    	Schoolr
+					    </div>
+						<span class=workTimePlace id="timePlace">
+							<i> March 2016 - Present </i>
+						</span>
+						<br>
+				    	<div class=workNamePos>
+					    	Front End Developer Intern
+					    </div>
+						<span class=workTimePlace id="timePlace">
+							<i>Irvine, CA</i>
+						</span>
+						<br>
+						<br>
+						<ul>
+							<li>Designed the user interface for the website mobile tutoring application using HTML/CSS.</li>
+							<li>Linked the templates for the websites interface to their respective controller pages using JavaScript.</li>
+							<li>Managed project deadlines and contributed ideas during biweekly meetings in preparation for our November 2017 launch.</li>
+						</ul> 
+						<br>
+			    </div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+			    <div class="col-sm-3" id="girlsIncImage">
+			    	<img class=workImage src="img/girls-inc.png" alt="Girls Inc.">
+			    </div>
+			    <div class="col-sm-9">
+				    	<div class=workNamePos>
+					    	Girls Inc.
+					    </div>
+						<span class=workTimePlace id="timePlace">
+							<i> June 2017 - August 2017 </i>
+						</span>
+						<br>
+				    	<div class=workNamePos>
+					    	Camp Mentor/Intern
+					    </div>
+						<span class=workTimePlace id="timePlace">
+							<i>Irvine, CA</i>
+						</span>
+						<br>
+						<br>
+						<ul>
+							<li>Mentored 30 middle and high school students in STEM by giving them hands on building and coding tasks.</li>
+							<li>Learned how to code using Choreographe in order to create an AI program that made the NAO Robots dance, talk, walk, and interact with people.</li>
+							<li>Taught the students how to block code using made with code, code.org, scratch, and thunkable.</li>
+						</ul> 
+						<br>
+			    </div>
+			</div>
 		</div>
 	</div>
 
 
 
+	<div class=resumeSection id=Resume>
+		<center>
+			<p> Download Resume Here! </p>
 
-
-
-
-	<div class=sectionTitle>
-		<h3> Experience </h3>
-		<p>
-			fjklds
-		</p>
+			<a class=downloadResume href="Sheila Truong Resume.pdf" target="_blank">
+				<img src="img/downloadicon.png" alt="PDF">
+			</a>
+		</center>
 	</div>
 
-	<center>
-		<a href=#>Resume</a>
-	</center>
 
-	<div class=sectionTitle>
+
+	<div class=sectionTitle id=Projects>
 		<h3> Projects </h3>
-		<p>
-			fjklds
-		</p>
+		<div class="container-fluid">
+			<div class="row">
+			    <div class="col-sm-3">
+		  			<div class=projectName>
+					    FabFlix
+					</div>
+				</div>
+				<div class="col-sm-9">
+				<span class=workTimePlace>
+					<i> March 2017 - June 2017 </i>
+				</span>
+				</div>
+			</div>
+			<div class="row">
+				<ul class="projectRow">
+					<li>A full stack website that allows users to search and purchase movies.</li>
+					<li>Created a MySQL database to keep track of customers sensitive information and details about the movie.</li>
+					<li>Used Apache Tomcat and Amazon Web Services instance to host the application.</li>
+					<li>Implemented reCaptcha, HTTPS, Stored Procedure and XML Parsing to make the application more secure.</li>
+				</ul> 
+			</div>
+			<div class="row" id=languages>
+				<ul>
+					<li> Java </li>
+					<li> HTML </li>
+					<li> MySQL </li>
+					<li> CSS </li>
+				</ul>
+			</div>
+			<br>
+			<div class="row">
+			    <div class="col-sm-3">
+		  			<div class=projectName>
+					    Spacetime Crawler
+					</div>
+				</div>
+				<div class="col-sm-9">
+				<span class=workTimePlace>
+					<i> March 2017 - June 2017 </i>
+				</span>
+				</div>
+			</div>
+			<div class="row">
+				<ul class="projectRow">
+					<li>Created a crawler that is part of a collaborative distribute crawling infrastructure.</li>
+					<li>Similar to a web search engine, the user inputs a keyword and the system uses crawlers to return 10 URLS that has the highest tf-idf ranking.</li>
+					<li>Built an index and a basic retrieval component using a simple user interface.</li>
+				</ul> 
+			</div>
+			<div class="row" id=languages>
+				<ul>
+					<li> Python </li>
+				</ul>
+			</div>
+		</div>
 	</div>
 
-	<center>
-		<footer>&copy; Sheila Truong 2017</footer>
-	</center>
+
+	<div class="sectionContact" id=Contact>
+		<center>
+			<img class=sendEmailIcon src="img/sendemail.png" alt="Here's my email">
+			<h3> Get In Touch! </h3>
+			<p>Want to say hi or have a cool project in mind, just shoot me an email!</p>
+			<br>
+			<a class="roundBorder" href="mailto:sheilat1@uci.edu"> sheilat1@uci.edu</a>
+		</center>
+	</div>
+
+	<div class="container-fluid">
+		<center>
+			<span class="socialMedia">
+				<a href="https://github.com/sheilatruong96" target="_blank"> <img src="img/githubicon.png" alt="Github"> </a>
+				<a href="https://www.linkedin.com/in/sheila-truong" target="_blank"><img src="img/linkedinicon.png" alt="LinkedIn"> </a>
+			</span>
+			<footer>&copy; Sheila Truong 2017 </footer>
+		</center>
+
+	</div>
+
+
 
 </body>
 </html>
