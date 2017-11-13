@@ -119,9 +119,6 @@ body { /*makes nav bar fill the entire space*/
   float: right;
 }
 
-/*.col-sm-3 img {
-  float:center;
-}*/
 .workNamePos {
   float: left;
   padding: 0%;
@@ -178,6 +175,20 @@ body { /*makes nav bar fill the entire space*/
     border-radius: 10em;
     border: .1em solid #000000;
     padding: 1.5%; 
+}
+
+#fabflixImage img {
+  width: 50%;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#spacetimeCrawlerImage img {
+  width: 60%;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 /*contact me*/
