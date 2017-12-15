@@ -9,6 +9,10 @@ body { /*makes nav bar fill the entire space*/
     padding: 0;
     overflow: hidden;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    background-color: #F5F5F5;
+    z-index: 123;
 
 }
 
@@ -36,6 +40,7 @@ body { /*makes nav bar fill the entire space*/
 }
 .headingDetails {
   text-align: center;
+  padding-top: 5%;
 }
 
 /*Profile Picture*/
@@ -68,7 +73,7 @@ body { /*makes nav bar fill the entire space*/
 
 /*About Me*/
 #AboutMe {
-  padding-top: 2em;
+  padding-top: 5em;
 }
 .sectionTitle p {
   margin-left: 8%;
@@ -76,7 +81,7 @@ body { /*makes nav bar fill the entire space*/
 
 /*skills*/
 #Skills {
-  padding-top:2em;
+  padding-top:5em;
 }
 .sectionSkills {
   background-color: #F0F0F0;
@@ -105,7 +110,7 @@ body { /*makes nav bar fill the entire space*/
 
 /*Experience*/
 #Experience {
-  padding-top:2em;
+  padding-top:5em;
 }
 
 .workImage {
@@ -132,9 +137,9 @@ body { /*makes nav bar fill the entire space*/
 
 /*Resume*/
 .resumeSection {
-  padding-top: 3%;
+  padding-top: 5em;
   background-color: #e6e6ff;
-  padding-bottom:3%;
+  padding-bottom:5em;
   /*height: 12em;*/
 }
 
@@ -152,7 +157,7 @@ body { /*makes nav bar fill the entire space*/
 /*Projects*/
 
 #Projects {
-  padding-top:2em;
+  padding-top:5em;
   padding-bottom: 2em;
 }
 
@@ -191,10 +196,12 @@ body { /*makes nav bar fill the entire space*/
   margin-right:auto;
 }
 
+
+
 /*contact me*/
 .sectionContact {
   background-color: #F0F0F0;
-  height:20em;
+  /*height:20em;*/
   padding: 5%;
 }
 .sendEmailIcon {
@@ -206,7 +213,6 @@ body { /*makes nav bar fill the entire space*/
     border-radius: 25em;
     border: .1em solid #000000;
     padding: 1%; 
-
 }
 
 
@@ -288,6 +294,7 @@ body { /*makes nav bar fill the entire space*/
     width: 25%;
     margin-left: 37%;
   }
+
 
   #Resume p {
     font-size: 1.3em;
